@@ -1,4 +1,4 @@
-package com.chiran.quizapp;
+package com.chiran.quizapp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +12,7 @@ public class Question {
 	
 	  
 	    @Id
-		@GeneratedValue(strategy = GenerationType.SEQUENCE)
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
 		private Integer id;
 		private String questionTitle;
 		private String option1;
